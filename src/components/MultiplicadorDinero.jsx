@@ -31,7 +31,7 @@ const MultiplicadorDinero = ({index, nombre ,valorMoneda, extraerMontoDinero}) =
       <input
         onChange={extraerValor}
         value={inputCantidad}
-        type="text" 
+        type="number" 
         placeholder="0"
         className="col-5"
       />

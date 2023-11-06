@@ -60,7 +60,7 @@ const SumadorDinero = ({ titulo, index, agregarMontoRestante }) => {
             ref={inputRef}
             onChange={extraerValor}
             value={inputDinero}
-            type="text"
+            type="number"
             className="input-planilla col-3"
             placeholder="Monto"
           />
