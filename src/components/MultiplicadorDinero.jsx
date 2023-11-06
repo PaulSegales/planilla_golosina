@@ -27,13 +27,13 @@ const MultiplicadorDinero = ({index, nombre ,valorMoneda, extraerMontoDinero}) =
 
   return (
     <div className="contenedor-dinero row  gap-2">
-      <label className="col-3 " htmlFor="">S/.  {nombre}</label>
+      <label className="col-4 " htmlFor="">S/.  {nombre}</label>
       <input
         onChange={extraerValor}
         value={inputCantidad}
         type="number" 
         placeholder="0"
-        className="col-5"
+        className="col-4"
       />
       <div 
         className="total-dinero col-3"
