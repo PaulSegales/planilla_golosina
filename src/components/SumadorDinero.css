@@ -5,7 +5,7 @@
 .contenedor-montos {
   display: flex;
   flex-wrap: wrap;
-  color: var(--color-btn);
+  color: var(--text-primary);
   gap: 10px;
   padding: 5px;
   margin: 10px 0;
@@ -15,4 +15,8 @@
 .monto-acumulado {
   border-radius: 5px;
   padding: 5px;
+  font-weight: bold; 
+  background-color: var(--color-primary);
+  font-size: 1.1rem;
+  border: 1px solid var(--color-btn);
 }

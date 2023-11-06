@@ -40,7 +40,7 @@ const Reporte = ({resultadosPlanilla}) => {
       </div> 
       <div className="reporte-dinero">
         <span>Dinero Excedente o Faltante: </span>
-        <span ref={refDinero} className="monto-final">/S.  {(DINERO_EXCEDENTE_FALTANTE).toFixed(2)}</span>
+        <span ref={refDinero} className="monto-final">S/.  {(DINERO_EXCEDENTE_FALTANTE).toFixed(2)}</span>
       </div>
     </div>
   )
