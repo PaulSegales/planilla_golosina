@@ -30,7 +30,7 @@ const Planilla = ({i, extraerResultado}) => {
       <input
         className="input-planilla"
         onChange={valorDinero }
-        type="text"
+        type="number"
         placeholder="Ingrese el total de la planilla"
       />
       <button 
