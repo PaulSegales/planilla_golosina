@@ -7,7 +7,6 @@ import Reporte from "./Reporte"
 
 const Administrador = () => {
 
-  
   const [resultadosPlanilla, setResultadosPlanilla] = useState([])
 
   const DINERO_PLANILLA = resultadosPlanilla[0]
