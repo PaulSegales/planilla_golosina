@@ -1,0 +1,17 @@
+.accordion-body {
+  background-color: var(--color-primary);
+}
+
+.contenedor-montos {
+  display: flex;
+  color: var(--text-secondary);
+  gap: 10px;
+  padding: 5px;
+  margin: 10px 0;
+  border-bottom: none !important;
+}
+
+.monto-acumulado {
+  border-radius: 5px;
+  padding: 5px;
+}

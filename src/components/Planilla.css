@@ -1,0 +1,24 @@
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 10px;
+  background-color: var(--color-primary);
+  min-height: calc( 100vh - 50px);
+  gap: 20px;
+}
+
+.monto {
+  padding: 5px 0;
+  border-radius: 5px;
+  text-align: center;
+  border: 2px solid var(--color-secondary);
+  color: var(--text-primary);
+}
+
+.btn-planilla {
+  background-color: var(--color-btn) !important;
+}
+
+.input-planilla {
+  padding: 10px !important;
+}

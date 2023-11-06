@@ -1,0 +1,4 @@
+.contenedor_planilla-dinero {
+  background-color: var(--color-primary);
+  min-height: calc( 100vh - 50px);
+}
