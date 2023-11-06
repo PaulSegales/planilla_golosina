@@ -14,6 +14,7 @@ const Planilla = ({i, extraerResultado}) => {
   const actualizarDineroPlanilla = () => {
     if(isNumber(cantidadDinero)) {
       setDineroPlanilla(parseFloat(cantidadDinero).toFixed(2))
+      setDineroPlanilla('')
     } else {
       alert("El valor tiene que ser un numero")
     }
