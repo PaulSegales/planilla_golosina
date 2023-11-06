@@ -33,6 +33,7 @@ const Planilla = ({i, extraerResultado}) => {
         onChange={valorDinero }
         type="number"
         placeholder="Ingrese el total de la planilla"
+        value={cantidadDinero}
       />
       <button 
         onClick={actualizarDineroPlanilla}
