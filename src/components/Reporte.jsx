@@ -39,7 +39,7 @@ const Reporte = ({resultadosPlanilla}) => {
         <span className="monto-final">S/. {parseFloat(DINERO_RECOLECTADO).toFixed(2)}</span>
       </div> 
       <div className="reporte-dinero">
-        <span>Dinero Excedente o Sobrante: </span>
+        <span>Dinero Excedente o Faltante: </span>
         <span ref={refDinero} className="monto-final">/S.  {(DINERO_EXCEDENTE_FALTANTE).toFixed(2)}</span>
       </div>
     </div>
