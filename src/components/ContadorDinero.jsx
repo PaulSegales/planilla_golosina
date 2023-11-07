@@ -47,8 +47,8 @@ const ContadorDinero = ({i, extraerResultado}) => {
       <MultiplicadorDinero index={6}  nombre={'10.00'} valorMoneda={10} extraerMontoDinero={extraerMontoDinero}/> 
       <MultiplicadorDinero index={7}  nombre={'20.00'} valorMoneda={20} extraerMontoDinero={extraerMontoDinero}/>
       <MultiplicadorDinero index={8}  nombre={'50.00'} valorMoneda={50} extraerMontoDinero={extraerMontoDinero}/>
-      <MultiplicadorDinero index={8}  nombre={'100.00'} valorMoneda={100} extraerMontoDinero={extraerMontoDinero}/>
-      <MultiplicadorDinero index={8}  nombre={'200.00'} valorMoneda={200} extraerMontoDinero={extraerMontoDinero}/>
+      <MultiplicadorDinero index={9}  nombre={'100.00'} valorMoneda={100} extraerMontoDinero={extraerMontoDinero}/>
+      <MultiplicadorDinero index={10}  nombre={'200.00'} valorMoneda={200} extraerMontoDinero={extraerMontoDinero}/>
     </div>
   )
 }
