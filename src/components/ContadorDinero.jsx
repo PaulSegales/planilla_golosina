@@ -6,6 +6,8 @@ const ContadorDinero = ({i, extraerResultado}) => {
 
   const [montosDinero, setMontosDinero] = useState([])
   const [dineroTotal, setDineroTotal] = useState(0)
+  const [billetes, setBilletes] = useState(0)
+  const [monedas, setMonedas] = useState(0)
   
   const sumarMontos = () => {
     const total = montosDinero.reduce((acc, monto) => {
@@ -13,9 +15,25 @@ const ContadorDinero = ({i, extraerResultado}) => {
         return acc + monto
       }
       return acc
-    }, 0)
+    }, 0) 
     setDineroTotal(total.toFixed(2))
   }
+
+  useEffect(()=> {
+    let totalMonedas = 0
+    let totalBilletes = 0
+    montosDinero.map((monto, index) => {
+      if (!isNaN(monto) && index < 6) {
+        totalMonedas += monto
+      } else if(!isNaN(monto) && index > 5) {
+        totalBilletes += monto
+      }
+    })
+    setMonedas(totalMonedas)
+    setBilletes(totalBilletes)
+  },[montosDinero])
+
+  console.log("monedas: " + monedas + " --- billetes: " + billetes)
 
   const extraerMontoDinero = (index, monto) => {
     const listRestantes = [...montosDinero]
@@ -25,6 +43,7 @@ const ContadorDinero = ({i, extraerResultado}) => {
     listRestantes[index] = parseFloat(monto)
     setMontosDinero(listRestantes)
   }
+
 
   useEffect(() => {
     sumarMontos()
@@ -49,6 +68,9 @@ const ContadorDinero = ({i, extraerResultado}) => {
       <MultiplicadorDinero index={8}  nombre={'50.00'} valorMoneda={50} extraerMontoDinero={extraerMontoDinero}/>
       <MultiplicadorDinero index={9}  nombre={'100.00'} valorMoneda={100} extraerMontoDinero={extraerMontoDinero}/>
       <MultiplicadorDinero index={10}  nombre={'200.00'} valorMoneda={200} extraerMontoDinero={extraerMontoDinero}/>
+      <div className="moneda-billete">
+        <label className="label-total">Monedas: </label><span className="valor-neto">S/.{monedas.toFixed(2)}</span><label className="label-total">Billetes: </label><span className="valor-neto">S/.{billetes.toFixed(2)}</span>
+      </div>
     </div>
   )
 }

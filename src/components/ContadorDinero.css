@@ -2,3 +2,27 @@
   background-color: var(--color-primary);
   min-height: calc( 100vh - 50px);
 }
+
+.moneda-billete {
+  font-weight: bold; 
+  display: grid;
+  align-items: center;
+  gap: 10px;
+  grid-template-columns: repeat( 4 , 1fr);
+  border: 1px solid var(--color-btn);
+  padding: 5px;
+  border-radius: 5px;
+  margin-top: 5px;
+}
+
+.label-total {
+  color: white;
+}
+
+.valor-neto {
+  text-align: center;
+  color: white;
+  background-color: var(--color-icon);
+  padding: 5px;
+  border-radius: 5px;
+}
