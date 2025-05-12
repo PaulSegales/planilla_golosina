@@ -1,6 +1,7 @@
 import './App.css'
 import Administrador from './components/Administrador'
 import ContadorDinero from './components/ContadorDinero'
+import Mantenimiento from './components/Mantenimiento'
 import MultiplicadorDinero from './components/MultiplicadorDinero'
 // import CalculadorRestante from './components/CalculadorRestante'
 // import Planilla from './components/Planilla'
@@ -15,7 +16,8 @@ function App() {
       {/* <CalculadorRestante /> */}
       {/* < MultiplicadorDinero nombre={'0.2'} valorMoneda={0.2} /> */}
       {/* <ContadorDinero /> */}
-      <Administrador />
+      {/* <Administrador /> */}
+      <Mantenimiento />
     </>
   )
 }
