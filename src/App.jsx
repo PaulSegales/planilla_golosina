@@ -16,8 +16,7 @@ function App() {
       {/* <CalculadorRestante /> */}
       {/* < MultiplicadorDinero nombre={'0.2'} valorMoneda={0.2} /> */}
       {/* <ContadorDinero /> */}
-      {/* <Administrador /> */}
-      <Mantenimiento />
+      <Administrador />
     </>
   )
 }
