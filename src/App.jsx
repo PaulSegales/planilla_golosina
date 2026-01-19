@@ -1,22 +1,19 @@
 import './App.css'
-import Administrador from './components/Administrador'
-import ContadorDinero from './components/ContadorDinero'
-import Mantenimiento from './components/Mantenimiento'
-import MultiplicadorDinero from './components/MultiplicadorDinero'
-// import CalculadorRestante from './components/CalculadorRestante'
-// import Planilla from './components/Planilla'
-// import SumadorDinero from './components/SumadorDinero'
+import Administrador from './components/Administrador';
+
+import VerificarPassword from './components/VerificarPassword'
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {
 
   return (
     <>
-      {/* <Planilla /> */}
-      {/* <SumadorDinero /> */}
-      {/* <CalculadorRestante /> */}
-      {/* < MultiplicadorDinero nombre={'0.2'} valorMoneda={0.2} /> */}
-      {/* <ContadorDinero /> */}
-      <Administrador />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<VerificarPassword />} />
+          <Route path="/Administrador" element={<Administrador />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }
