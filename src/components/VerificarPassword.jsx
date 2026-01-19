@@ -26,7 +26,7 @@ function VerificarPassword() {
   return (
     <form onSubmit={verificarPassword}>
       <div style={styles.container}>
-        <h2>Ingresar contraseña</h2>
+        <h2>Ingresar contraseña:</h2>
 
 
         <input
